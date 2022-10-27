@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LuisOrtega.Registro">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout >
          
-                <Label x:Name="lblUsuario" Text="." HorizontalTextAlignment="End" FontSize="14"/>
+                <Label x:Name="lblUsuario" Text="." HorizontalTextAlignment="Center" FontSize="14"/>
             <Label Text="Ventana de Registro"
                 
-                HorizontalOptions="CenterAndExpand" FontSize="20" TextColor="DarkBlue"/>
+                HorizontalOptions="Center" FontSize="20" TextColor="DarkBlue"/>
                 <Label x:Name="Error" FontSize="Medium" TextColor="Red" />
                 <Grid>
                 <Grid.RowDefinitions>
@@ -23,18 +23,18 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label  Text="Nombre Estudiante" Grid.Row="0" Grid.Column="0" FontSize="18" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Label  Text="Nombre Estudiante" Grid.Row="0" Grid.Column="0" FontSize="17" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                 <Entry x:Name="txtNombre" Placeholder="Nombre Estudiante" Grid.Row="0" Grid.Column="1" />
                 <Label  Text="Monto Inicial" Grid.Row="1" Grid.Column="0" FontSize="18" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                     <Entry x:Name="txtMonto" Placeholder="Monto Inicial" Grid.Row="1" Grid.Column="1" TextChanged="txtMonto_TextChanged"/>
                  
                     <Label  Text="Pago Mensual" Grid.Row="2" Grid.Column="0" FontSize="18" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                 <Entry x:Name="txtPagoInicial" Placeholder="Pago Inicial" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" />
-                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="2" Grid.Column="2"/>
+                    <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center"/>
                 
             </Grid>
-           
-            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" HorizontalOptions="Center"/>
 
 
         </StackLayout>

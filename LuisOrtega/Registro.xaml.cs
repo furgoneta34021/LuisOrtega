@@ -31,6 +31,7 @@ namespace LuisOrtega
             Valorinicial = Convert.ToDouble(txtMonto.Text);
             cuotaMensual = ((valortotal - Valorinicial) / 5 + 0.05 * valortotal);
             txtPagoInicial.Text = Convert.ToString(cuotaMensual);
+            DisplayAlert("Alerta", "Cuota Mensual \n" + cuotaMensual, "Cerrar");
         }
 
         private async void btnGuardar_Clicked(object sender, EventArgs e)

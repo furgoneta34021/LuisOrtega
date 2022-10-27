@@ -22,14 +22,16 @@
                 </Grid.ColumnDefinitions>
 
                 <Entry x:Name="txtusuarioConectado" Placeholder="" Grid.Row="0" Grid.Column="1" />
-                <Label Text="Usuario Conectado" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Usuario Conectado" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="CenterAndExpand"/>
                 <Entry x:Name="txtnombreestudiante" Placeholder="Nombre Estudiante" Grid.Row="1" Grid.Column="1"/>
-                <Label Text="Nombre Estudiante" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Nombre Estudiante" Grid.Row="1" Grid.Column="0" FontSize="20" HorizontalOptions="CenterAndExpand"/>
                 <Entry x:Name="txtPagar" Placeholder="Total a Pagar" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" />
-                <Label Text="Total" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Total " Grid.Row="2" Grid.Column="0" FontSize="20" HorizontalOptions="CenterAndExpand"/>
 
 
             </Grid>
+
+            <Button x:Name="btnFin" Text="Finalizar" Clicked="btnFin_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

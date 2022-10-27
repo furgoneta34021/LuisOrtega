@@ -19,5 +19,10 @@ namespace LuisOrtega
             txtnombreestudiante.Text=nombre;
             txtPagar.Text = Convert.ToString(valortotal);
         }
+
+        private void btnFin_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Alerta", "Proceso Finalizado", "Cerrar");
+        }
     }
 }
